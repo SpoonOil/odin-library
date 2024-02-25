@@ -25,6 +25,16 @@ h2.currentBooksTitle {
     width: 80%;
     height: 100%;
     justify-self: center;
+    border-collapse: collapse;
+}
+
+.booksTable td {
+    text-align: center;
+    /* border: 1px solid lightgray; */
+}
+
+.booksTable tr {
+    border: 1px solid lightgray;
 }
 
 .booksTableContainer {

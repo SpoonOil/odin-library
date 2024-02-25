@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script defer src="library-script.js"></script>
+    <link rel="stylesheet" href="library-styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="pageTitle">
+            Library
+        </h1>
+    </header>
+    <main>
+        <div class="currentBookDisplay">
+            <h2 class="newBookTitle">
+                Add Book
+            </h2>
+            <sidebar class="newBook">
+                <form class = "newBookForm">
+                    <label for="newTitle">Book Name</label>
+                    <input required type="text" name="newTitle" id="newTitleInput">
+                    <label for="newAuthor">Author</label>
+                    <input required type="text" name="newAuthor" id="newAuthorInput">
+                    <label for="newPages">Pages</label>
+                    <input required type="number" name="newPages" id="newPagesInput">
+                    <label for="newStatus">Status</label>
+                    <select required name="newStatus" id="newStatusInput">
+                        <option value="Not Started">Not Started</option>
+                        <option value="Finished">Finished</option>
+                        <option value="Reading">Reading</option>
+                        <option value="Ongoing">Ongoing</option>
+                        <option value="Hiatus">Hiatus</option>
+                    </select>
+                    <button type="submit" class = "addBookButton">Add Book</button>
+                </form>
+            </sidebar>
+            <h2 class="currentBooksTitle">
+                Books
+            </h2>
+            <div class="booksTableContainer">
+                <table class="booksTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Status</th>
+                    </tr>
+                </table>
+                <button type="button" class = 'updateButton'>Update</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
